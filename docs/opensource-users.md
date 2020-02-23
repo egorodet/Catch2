@@ -23,6 +23,9 @@ C++11 implementation of Approval Tests, for quick, convenient testing of legacy 
 ### [Azmq](https://github.com/zeromq/azmq)
 Boost Asio style bindings for ZeroMQ.
 
+### [Cataclysm: Dark Days Ahead](https://github.com/CleverRaven/Cataclysm-DDA)
+Post-apocalyptic survival RPG.
+
 ### [ChakraCore](https://github.com/Microsoft/ChakraCore)
 The core part of the Chakra JavaScript engine that powers Microsoft Edge.
 
@@ -49,9 +52,6 @@ Open source Oracle Tuxedo-like XATMI middleware for C and C++.
 
 ### [Inja](https://github.com/pantor/inja)
 A header-only template engine for modern C++.
-
-### [JSON for Modern C++](https://github.com/nlohmann/json)
-A, single-header, JSON parsing library that takes advantage of what C++ has to offer.
 
 ### [libcluon](https://github.com/chrberger/libcluon)
 A single-header-only library written in C++14 to glue distributed software components (UDP, TCP, shared memory) supporting natively Protobuf, LCM/ZCM, MsgPack, and JSON for dynamic message transformations in-between. 
@@ -103,11 +103,17 @@ MAME originally stood for Multiple Arcade Machine Emulator.
 ### [Newsbeuter](https://github.com/akrennmair/newsbeuter)
 Newsbeuter is an open-source RSS/Atom feed reader for text terminals.
 
+### [raspigcd](https://github.com/pantadeusz/raspigcd)
+Low level CLI app and library for execution of GCODE on Raspberry Pi without any additional microcontrolers (just RPi + Stepsticks).
+
 ### [SpECTRE](https://github.com/sxs-collaboration/spectre)
 SpECTRE is a code for multi-scale, multi-physics problems in astrophysics and gravitational physics.
 
 ### [Standardese](https://github.com/foonathan/standardese)
 Standardese aims to be a nextgen Doxygen.
+
+### [PopHead](https://github.com/SPC-Some-Polish-Coders/PopHead)
+A 2D, Zombie, RPG game which is being made on our own engine.
 
 ---
 

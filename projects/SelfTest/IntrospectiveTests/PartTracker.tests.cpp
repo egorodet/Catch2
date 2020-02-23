@@ -8,21 +8,6 @@
 #include "internal/catch_suppress_warnings.h"
 #include "internal/catch_test_case_tracker.h"
 
-
-namespace Catch
-{
-    class LocalContext {
-
-    public:
-        TrackerContext& operator()() const {
-            return TrackerContext::instance();
-        }
-    };
-
-} // namespace Catch
-
-// -------------------
-
 #include "catch.hpp"
 
 using namespace Catch;
@@ -202,5 +187,20 @@ TEST_CASE( "#1394 nested", "[.][approvals][tracker]" ) {
     SECTION( "NestedSkipSection" ) {
         // cause an error if this section is called because it shouldn't be
         REQUIRE(1 == 0);
+    }
+}
+
+// Selecting a "not last" section inside a test case via -c "section" would
+// previously only run the first subsection, instead of running all of them.
+// This allows us to check that `"#1670 regression check" -c A` leads to
+// 2 successful assertions.
+TEST_CASE("#1670 regression check", "[.approvals][tracker]") {
+    SECTION("A") {
+        SECTION("1") SUCCEED();
+        SECTION("2") SUCCEED();
+    }
+    SECTION("B") {
+        SECTION("1") SUCCEED();
+        SECTION("2") SUCCEED();
     }
 }
